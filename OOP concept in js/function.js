@@ -17,3 +17,33 @@ let multi = (c,d) =>{
 
 mycallback(1,3, print)
 mycallback(3,4,multi)
+
+var names = ['mehedi hasan', ' mahim hasan', ' hafizur rahman','mamta beagum']
+
+const traverse = (names,callback) =>{
+    for (name of names){
+        callback(name)
+    
+    }
+}
+
+function myprint(name){
+    console.log(name)
+}
+
+traverse(names,myprint)
+
+
+// concept of obj
+
+var person = {}
+
+person.name= ' mehedi'
+person.age = 12
+person.print  = () =>{
+    console.log(`my name is ${this.name} and my age is ${this.age}`)
+
+}
+
+person.print()
+
